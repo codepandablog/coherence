@@ -12,6 +12,7 @@ public class HelloWorld {
 		NamedCache<Object, Object> cache=CacheFactory.getCache("hello-example");
 		cache.put(key,value);
 		System.out.println("Hi Welcome: Mr. "+(String)cache.get(key));
+		CacheFactory.shutdown();
 	}
 
 }
